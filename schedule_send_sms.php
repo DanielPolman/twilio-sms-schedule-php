@@ -33,7 +33,7 @@ if (($handle = fopen('../uploads/'.$file_name, "r")) !== FALSE) {
             if ($data[0] <> "respondent") {
                $row++;
                $respondent[] = $data[0];
-               $datum[] = substr($data[1],0,16).":".strval(rand(0,5)).strval(rand(0,9))."+02:00";
+               $datum[] = substr($data[1],0,16).":".strval(rand(0,5)).strval(rand(0,9))."+02:00"; // ---- adds random seconds to prevent exceding max SMS; and timezone (+02:00 for AMS)
             }
         }
 }
