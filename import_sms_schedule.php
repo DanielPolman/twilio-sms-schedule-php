@@ -68,7 +68,5 @@ if ($file_ok <> 'Y'){  // ---- No upload yet: show upload form
 
 }
 
-// ------ EOF import_sms.php
+// ------ EOF import_sms_schedule.php
 ?>
-
-
